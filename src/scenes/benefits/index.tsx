@@ -1,6 +1,7 @@
 import { HomeModernIcon, UserGroupIcon, AcademicCapIcon } from "@heroicons/react/24/solid"
 import { motion } from "framer-motion";
 import { SelectedPage } from "@/shared/types";
+import HText from "@/shared/HText";
 type Props = {
     setSelectedPage: (value: SelectedPage) => void;
 }
@@ -11,7 +12,8 @@ const index = ({setSelectedPage}: Props) => {
       onViewportEnter={() => setSelectedPage(SelectedPage.Benefits)}
 
       >
-        <div></div>
+        <HText>MAS QUE SOLO UN GIMNASIO</HText>
+
       </motion.div>
 
     </section>
