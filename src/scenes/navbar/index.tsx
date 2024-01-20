@@ -1,4 +1,4 @@
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/16/solid";
+// import { Bars3Icon, XMarkIcon } from "@heroicons/react/16/solid";
 import Link from "./Link";
 import { SelectedPage } from "@/shared/types";    
 import useMediaQuery from "@/hooks/useMediaQuery";
@@ -72,7 +72,7 @@ const Navbar = ({
                 className="rounded-full bg-secondary-500 p-2"
                 onClick={() => setIsMenuToggled(!isMenuToggled)}
               >
-                <Bars3Icon className="h-6 w-6 text-white" />
+                {/* <Bars3Icon className="h-6 w-6 text-white" /> */}
               </button>
             )}
           </div> 
@@ -84,7 +84,7 @@ const Navbar = ({
           {/* CLOSE ICON */}
           <div className="flex justify-end p-12">
             <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
-              <XMarkIcon className="h-6 w-6 text-gray-400" />
+              {/* <XMarkIcon className="h-6 w-6 text-gray-400" /> */}
             </button>
           </div>
           {/* MENU ITEMS */}
