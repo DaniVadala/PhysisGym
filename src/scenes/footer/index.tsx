@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="mt-16 basis-1/4 md:mt-0">
           <h4 className="font-bold">Links Útiles</h4>
           <a className="my-5" href="http://www.worldtaekwondo.org/index.html">WORLD TAEKWONDO</a> 
-          <p className="my-5" href="http://www.worldtaekwondo.org/index.html">ASOCIACIÓN MEDITERRANEA TAEKWONDO</p>
+          <p className="my-5">ASOCIACIÓN MEDITERRANEA TAEKWONDO</p>
           
         </div>
         <div className="mt-16 basis-1/4 md:mt-0">
