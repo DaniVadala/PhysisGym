@@ -26,7 +26,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
   };
 
   return (
-    <section id="contactus" className="mx-auto w-5/6 pt-24 pb-32">
+    <section id="contacto" className="mx-auto w-5/6 pt-24 pb-32">
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.ContactUs)}
       >
@@ -43,12 +43,14 @@ const ContactUs = ({ setSelectedPage }: Props) => {
           }}
         >
           <HText>
-            <span className="text-primary-500">JOIN NOW</span> TO GET IN SHAPE
+            <span className="text-primary-500">SUMATE A NOSOTROS</span> Y
+            CULTIVA TU BIENESTAR
           </HText>
           <p className="my-5">
-            Congue adipiscing risus commodo placerat. Tellus et in feugiat nisl
-            sapien vel rhoncus. Placerat at in enim pellentesque. Nulla
-            adipiscing leo egestas nisi elit risus sit. Nunc cursus sagittis.
+            Te invitamos a sumarte a nuestra comunidad, donde encontrarás un
+            enfoque integral para mejorar tu salud y bienestar. ¡Contáctanos
+            ahora para obtener más información y asegura tu lugar en nuestras
+           actividades!
           </p>
         </motion.div>
 
@@ -68,17 +70,17 @@ const ContactUs = ({ setSelectedPage }: Props) => {
             <form
               target="_blank"
               onSubmit={onSubmit}
-            //   COLOCAR MAIL A DONDE SE VAN A ENVIAR; LUEGO EN EL PRIMER MAIL QUE SE ENVIE TE DARAN LA 
-            //   OPCIÓN DE HACER EL MAIL ANONIMO PARA QUE NO ESTE EXPUESTO EN LA WEB.
-            //   PAGINA A LA QUE ACCEDER PARA MAS INFORMACIÓN
-            // https://formsubmit.co/
+              //   COLOCAR MAIL A DONDE SE VAN A ENVIAR; LUEGO EN EL PRIMER MAIL QUE SE ENVIE TE DARAN LA
+              //   OPCIÓN DE HACER EL MAIL ANONIMO PARA QUE NO ESTE EXPUESTO EN LA WEB.
+              //   PAGINA A LA QUE ACCEDER PARA MAS INFORMACIÓN
+              // https://formsubmit.co/
               action="https://formsubmit.co/el-mail-va-aca----"
               method="POST"
             >
               <input
                 className={inputStyles}
                 type="text"
-                placeholder="NAME"
+                placeholder="NOMBRE"
                 {...register("name", {
                   required: true,
                   maxLength: 100,
@@ -111,7 +113,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
 
               <textarea
                 className={inputStyles}
-                placeholder="MESSAGE"
+                placeholder="MENSAJE"
                 rows={4}
                 cols={50}
                 {...register("message", {
@@ -132,7 +134,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                 type="submit"
                 className="mt-5 rounded-lg bg-secondary-500 px-20 py-3 transition duration-500 hover:text-white"
               >
-                SUBMIT
+                ENVIAR
               </button>
             </form>
           </motion.div>

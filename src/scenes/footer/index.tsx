@@ -6,21 +6,19 @@ const Footer = () => {
         <div className="mt-16 basis-1/2 md:mt-0">
 <img className="h-10" src="https://upload.wikimedia.org/wikipedia/commons/3/36/Pakua.svg" alt="" />        
   <p className="my-5">
-            Lorem vitae ut augue auctor faucibus eget eget ut libero. Elementum
-            purus et arcu massa dictum condimentum. Augue scelerisque iaculis
-            orci ut habitant laoreet. Iaculis tristique.
+  Descubre tu mejor versión en Physis Gym. Ofrecemos un espacio único donde se fusionan disciplinas como Taekwondo, Tai Chi, Yoga, Reiki, Acupuntura y Fisioterapia. Cultiva tu bienestar físico y emocional con nosotros
           </p>
           <p>© Physis Gym All Rights Reserved.</p>
         </div>
         <div className="mt-16 basis-1/4 md:mt-0">
-          <h4 className="font-bold">Links</h4>
-          <p className="my-5">Massa orci senectus</p>
-          <p className="my-5">Et gravida id et etiam</p>
-          <p>Ullamcorper vivamus</p>
+          <h4 className="font-bold">Links Útiles</h4>
+          <a className="my-5" href="http://www.worldtaekwondo.org/index.html">WORLD TAEKWONDO</a> 
+          <p className="my-5" href="http://www.worldtaekwondo.org/index.html">ASOCIACIÓN MEDITERRANEA TAEKWONDO</p>
+          
         </div>
         <div className="mt-16 basis-1/4 md:mt-0">
-          <h4 className="font-bold">Contact Us</h4>
-          <p className="my-5">Tempus metus mattis risus volutpat egestas.</p>
+          <h4 className="font-bold">Contacto</h4>
+          <p className="my-5">Te enviamos información por whatsapp o acercate a nuestro gimnasio</p>
           <p>(000)4000000</p>
         </div>
       </div>

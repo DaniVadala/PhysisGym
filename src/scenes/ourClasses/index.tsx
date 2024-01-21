@@ -1,46 +1,43 @@
 import { SelectedPage, ClassType } from "@/shared/types";
-import image1 from "@/assets/image1.png";
-import image2 from "@/assets/image2.png";
+import image1 from "@/assets/image1.jpg";
+import image2 from "@/assets/image2.jpg";
 import image3 from "@/assets/image3.png";
-import image4 from "@/assets/image4.png";
-import image5 from "@/assets/image5.png";
-import image6 from "@/assets/image6.png";
+import image4 from "@/assets/image4.jpg";
+import image5 from "@/assets/image5.jpg";
 import { motion } from "framer-motion";
 import HText from "@/shared/HText";
 import Class from "./Class";
 
 const classes: Array<ClassType> = [
   {
-    name: "ut labore Classes",
+    name: "TAEKWONDO",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "El Taekwondo, arte marcial coreano, destaca por su énfasis en técnicas de patadas y golpes, fomentando la agilidad, la fuerza física y mental, y promoviendo la disciplina personal.",
     image: image1,
   },
   {
-    name: "ut labore Classes",
+    name: "YOGA",
+    description:
+      "El yoga, ancestral práctica de origen hindú, se centra en la conexión mente-cuerpo mediante posturas, respiración y meditación. Sus beneficios incluyen flexibilidad, relajación mental, fortalecimiento muscular y equilibrio emocional",
     image: image2,
   },
   {
-    name: "ut labore Classes",
+    name: "TAICHI",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "El Tai Chi, arte marcial chino milenario, se distingue por movimientos fluidos y su enfoque en la energía interna. Promueve la armonía entre mente y cuerpo, mejorando la flexibilidad, equilibrio, y proporcionando beneficios para la salud mental y física.",
     image: image3,
   },
   {
-    name: "ut labore Classes",
+    name: "FISIOTERAPIA",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Nuestra profesora de Yoga, ademas es fisioterapeuta, y brinda tratamientos de rehabilitación, a fin de restablecer el funcionamiento físico mediante ejercicios y técnicas especializadas. Ofrece beneficios como mejora de la movilidad, alivio del dolor, fortalecimiento muscular y recuperación funcional, proporcionando cuidado integral para la salud física",
     image: image4,
   },
   {
-    name: "ut labore Classes",
-    image: image5,
-  },
-  {
-    name: "ut labore Classes",
+    name: "ACUPUNTURA Y REIKI",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    image: image6,
+      "La acupuntura y el Reiki, procedimientos terapéuticos distintos, convergen en su objetivo de mejorar la salud. Mientras que la acupuntura, mediante agujas, alivia el dolor y equilibra la energía, el Reiki, canaliza la energía a través de las manos, permitiendo reducir el estrés y promover la armonía energética.",
+    image: image5,
   },
 ];
 
@@ -50,7 +47,7 @@ type Props = {
 
 const OurClasses = ({ setSelectedPage }: Props) => {
   return (
-    <section id="ourclasses" className="w-full bg-primary-100 py-40">
+    <section id="nuestrasclases" className="w-full bg-primary-100 py-40">
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.OurClasses)}
       >
@@ -66,12 +63,16 @@ const OurClasses = ({ setSelectedPage }: Props) => {
           }}
         >
           <div className="md:w-3/5">
-            <HText>OUR CLASSES</HText>
+            <HText>NUESTRAS CLASES Y SERVICIOS</HText>
             <p className="py-5">
-              Fringilla a sed at suspendisse ut enim volutpat. Rhoncus vel est
-              tellus quam porttitor. Mauris velit euismod elementum arcu neque
-              facilisi. Amet semper tortor facilisis metus nibh. Rhoncus sit
-              enim mattis odio in risus nunc.
+              Explora un universo de bienestar integral en nuestro centro, donde
+              convergen disciplinas como Taekwondo para la fuerza y agilidad,
+              Tai Chi para el equilibrio energético, Yoga para la armonía
+              mente-cuerpo, Reiki para la sanación energética, Acupuntura para
+              el alivio físico, y Fisioterapia para la rehabilitación. Sumérgete
+              en un espacio que abraza la diversidad terapéutica, ofreciendo un
+              enfoque holístico para cultivar tu salud y equilibrio en todos los
+              niveles.
             </p>
           </div>
         </motion.div>
@@ -84,7 +85,7 @@ const OurClasses = ({ setSelectedPage }: Props) => {
                 description={item.description}
                 image={item.image}
               />
-            ))}
+            ))} 
           </ul>
         </div>
       </motion.div>

@@ -61,7 +61,7 @@ const Navbar = ({
                   />
                 </div>
                 <div className={`${flexBetween} gap-8`}>
-                  <p>Sign in</p>
+                  {/* <p>Sign in</p> */}
                   <ActionButton setSelectedPage={setSelectedPage}>
                     Inscribite
                   </ActionButton>
